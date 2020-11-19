@@ -41,9 +41,9 @@ public:
     bool IsDescendant();
     void DeleteLeaves();
     bool DeleteNode(TreeNode* node);
-
+    void printInorder(TreeNode* node);
 private:
     void Add(char c, TreeNode* node);
 
-    TreeNode root;
+    TreeNode* root;
 };

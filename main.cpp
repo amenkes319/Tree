@@ -4,5 +4,5 @@
 int main() 
 {
     Tree tree;
-    tree.Print();
+    tree.Fill("fileA.txt");
 }
