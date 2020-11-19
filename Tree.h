@@ -1,3 +1,9 @@
+#pragma once
+
+#include <stdio.h>
+#include <iostream>
+#include <fstream>
+
 struct TreeNode
 {
     char value;
@@ -23,7 +29,7 @@ class Tree
 {
 public:
     Tree();
-    void Fill();
+    void Fill(std::string fileName);
     void Preorder();
     void Inorder();
     void Postorder();
@@ -37,5 +43,7 @@ public:
     bool DeleteNode(TreeNode* node);
 
 private:
+    void Add(char c, TreeNode* node);
+
     TreeNode root;
 };

@@ -1,13 +1,24 @@
 #include "Tree.h"
-#include <stdio.h>
-#include <iostream>
 
 Tree::Tree()
     : root('a')
 {
 }
 
-void Tree::Fill()
+void Tree::Fill(std::string fileName)
+{
+    std::ifstream file(fileName);
+    std::string line;
+    getline(file, line);
+
+    root = TreeNode(line[0]);
+    for (int i = 1; i < line.length(); i++)
+    {
+
+    }
+}
+
+void Tree::Add(char c, TreeNode* node)
 {
 
 }
